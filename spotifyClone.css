@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.roboto-paragraph {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.roboto-semibold {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.roboto-heading {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.boldheading-text{
+    font-size: 2rem;
+}
+
+.heading-text{
+    font-size: 1.25rem;
+}
+
+.normal-text{
+    font-size: 1rem;
+}
+
+.mini-text{
+    font-size: 0.9rem;
+}
+
+.button-text{
+    font-size: 0.8125rem;
+}
+
+.nav{
+    border: 2px solid black;
+    background-color: black;
+    color: #FFFFFF;
+    display:  flex;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 1rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    letter-spacing: 2px;
+    z-index: 3;
+}
+
+.search-box{
+    border: none;
+    background-color: #1F1F1F;
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 25rem;
+    color: #FFFFFF;
+    padding-left: 3rem;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.search-box:hover{
+    background-color: #383838;
+    border: 2.5px solid #ffffff;
+
+}
+
+.nav-left{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left i{
+    margin: 1rem;
+}
+
+#spotify{
+    font-size: 1rem;
+}
+
+#house{
+    font-size: 2rem;
+}
+
+.nav-right ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right ul li{
+    margin: 0 7px;
+
+}
+
+.seperator{
+    scale: 1.5  ;
+}
+
+.big-capsule{
+    border: none;
+    background-color: #FFFFFF;
+    height: 3rem;
+    border-radius: 2rem;
+    width: 6rem;
+}
+
+.clone{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    position: fixed;
+    top: 4rem;
+    background-color: black;    
+} 
+
+.side-bar{
+    width: 30%;
+}
+
+.side-bar .side-bar-content {
+    border-radius: 0.7rem;
+    height: 81%;
+    width: auto;
+    background-color: #121212;
+    margin: 0.5rem;
+}
+
+.side-bar .side-bar-content .side-bar-content-header{
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.side-bar-content-header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sidebar-box{
+    width: 95%;
+    border-radius: 0.5rem;
+    background-color: #1F1F1F;
+    height: 9rem;
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    line-height: 2rem;
+}
+
+.sidebar-button{
+    border: none;
+    background-color: #FFFFFF;
+    height: 1.8rem;
+    align-self: baseline;
+    margin-top: 1.2rem;
+    border-radius: 2rem;
+    width: 9rem;
+    transition: 0.3s;
+}
+
+.side-bar-nav{
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #8C8C8C;
+}
+
+.side-bar-nav ul li{
+    display: inline-flex;
+    margin: 0.4rem;
+}
+
+.side-bar-nav ul li a{
+    text-decoration: none;
+    color: #8C8C8C;
+}
+
+#cookies{
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+    line-height: 3rem;
+    color: white;
+    display: block;
+}
+
+.sidebar-button-lang{
+    border: none;
+    background-color: #121212;
+    color: white;
+    border: 1px solid rgb(141, 141, 141);
+    height: 2rem;
+    border-radius: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.sidebar-button-lang:hover{
+    border: 2px solid rgb(255, 255, 255);
+    scale: 1.1;
+}
+
+
+.main-content{
+    overflow: auto;
+    border-radius: 0.7rem;
+    height: 81%;
+    background: linear-gradient(#121212,black,#121212);
+    margin: 0.5rem 0.3rem 0.5rem 0;
+    flex: 1;
+}
+
+.main-content-content{
+    margin: 0 0.1rem 1.75rem 2rem;
+}
+
+.main-content .main-content-content .main-content-heading{
+    margin: 2rem 0.2rem 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content-row-card{
+    line-height: 1.5rem;
+    height: 14.4rem;
+    width: 10rem;
+    padding: 0.5rem;
+}
+
+.main-content-row-card img{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 1rem black;
+}
+
+.main-content-row-card-songs{
+    line-height: 1.5rem;
+    height: 14.4rem;
+    width: 10rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.main-content-row-card-songs #song{
+
+    height: 8.5rem;
+    width: 8.5rem;
+    border-radius: 6px;
+}
+
+
+.main-content-row-card:hover{
+    background-color: #1f1f1f;
+    border-radius: 0.5rem;
+}
+
+.main-content-row-card-songs:hover{
+    background-color: #1f1f1f;
+    border-radius: 0.5rem;
+}
+
+.main-footer{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-evenly;
+}
+
+.main-footer .foot-div ul li{
+    padding: 0.6rem;
+}
+
+.foot-div i{
+    margin-right: 2rem;
+    margin: 1.2rem;
+    padding: 0.8rem;
+}
+
+.foot-div i:hover{
+    background-color: #383838;
+    scale: 1.2;
+    border-radius: 50%;
+}
+
+.page-end{
+    margin: 2rem;
+}
+
+.hr{
+    border: 1px solid whitesmoke;
+    width: 90%;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.rights{
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+
+
+.footer{
+    background: linear-gradient(to right,purple,rgb(150, 36, 150),violet,rgb(83, 83, 216),rgb(74, 74, 222));
+    position: fixed;
+    width: 100%;
+    height: 4.5rem;
+    bottom: 0;
+    z-index: 2;
+}
+
+.footer-content{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-capsule-signup{
+    border: none;
+    background-color: #FFFFFF;
+    height: 2.5rem;
+    border-radius: 2rem;
+    width: 6rem;
+    transition: 0.3s;
+}
+
+
+.big-capsule-signup:hover{
+    height: 2.5rem;
+    border-radius: 5rem;
+    width: 6.2rem;
+    background-color: #dfdfdf;
+}
+
+
+
+
+
+li{
+    opacity: 0.7;
+    transition: 0.2s;
+    list-style: none;
+}
+
+li:hover{
+    opacity: 1;
+}
+
+.u-effect:hover{
+    text-decoration: white underline;
+}
