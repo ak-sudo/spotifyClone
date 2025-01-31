@@ -4,8 +4,6 @@
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Spotify Mix';
-
-
 }
 
 .boldheading-text{
@@ -13,7 +11,7 @@
 }
 
 .heading-text{
-    font-size: 1.25rem;
+    font-size: 15px;
 }
 
 .normal-text{
@@ -35,7 +33,7 @@
     display:  flex;
     justify-content: space-between;
     height: 4rem;
-    padding: 1rem;
+    padding: 0.5rem;
     align-items: center;
     position: fixed;
     top: 0;
@@ -48,7 +46,8 @@
     border: none;
     background-color: #1F1F1F;
     border-radius: 2rem;
-    height: 2.5rem;
+    height: 3.5rem;
+    align-items: center;
     width: 25rem;
     color: #FFFFFF;
     padding-left: 3rem;
@@ -90,7 +89,7 @@
 
 .nav-right ul li{
     margin: 0 7px;
-
+    font-size: 1rem;
 }
 
 .seperator{
@@ -103,6 +102,8 @@
     height: 3rem;
     border-radius: 2rem;
     width: 6rem;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .clone{
@@ -116,7 +117,7 @@
 } 
 
 .side-bar{
-    width: 30%;
+    width: 25%;
 }
 
 .side-bar .side-bar-content {
@@ -209,7 +210,7 @@
 
 
 .main-content{
-    overflow: auto;
+    overflow:scroll;
     border-radius: 0.7rem;
     height: 81%;
     background: linear-gradient(#121212,black,#121212);
@@ -230,7 +231,9 @@
 
 .main-content-row{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    overflow-x: auto;
 }
 
 .main-content-row-card{
@@ -279,17 +282,18 @@
 .main-footer{
     display: flex;
     margin: 2rem;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .main-footer .foot-div ul li{
-    padding: 0.6rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    font-weight: 300;
 }
 
 .foot-div i{
-    margin-right: 2rem;
-    margin: 1.2rem;
-    padding: 0.8rem;
+    margin: 2rem;
+    /* margin: 1.2rem; */
+    padding: 10px;
 }
 
 .foot-div i:hover{
@@ -303,7 +307,8 @@
 }
 
 .hr{
-    border: 1px solid whitesmoke;
+    border: 1px solid #121212;
+    border-bottom: 0.5px solid rgb(117, 117, 117);
     width: 90%;
     height: 1px;
     margin: 0 auto;
@@ -313,6 +318,7 @@
     margin: 2rem;
     padding: 1rem;
     font-size: 0.9rem;
+    color: rgb(192, 192, 192)
 }
 
 
@@ -322,6 +328,7 @@
     position: fixed;
     width: 100%;
     height: 4.5rem;
+    font-weight: 300;
     bottom: 0;
     z-index: 2;
 }
@@ -336,9 +343,11 @@
 .big-capsule-signup{
     border: none;
     background-color: #FFFFFF;
-    height: 2.5rem;
+    height: 3rem;
     border-radius: 2rem;
-    width: 6rem;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 7rem;
     transition: 0.3s;
 }
 
@@ -367,3 +376,51 @@ li:hover{
 .u-effect:hover{
     text-decoration: white underline;
 }
+
+#little-font{
+    font-size: 15px;
+}
+
+
+.card-font{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.bold-text{
+        font-family: 'Spotify Mix';
+        font-weight: bold;
+        font-style: normal;
+    
+}
+
+.transit{
+    color: #B0B0B0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.transit img{
+    opacity: 0.7;
+}
+
+.transit img:hover{
+    opacity: 1;
+}
+.transit:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.search-glass{
+    color: #B0B0B0;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.search-glass:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+
+
