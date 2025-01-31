@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="icon" href="icon.png">
+    <link rel="icon" href="./assets/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
+
     <link rel="stylesheet" href="spotifyClone.css">
+
 </head>
-<body style="font-family: 'Spotify Mix';>
-    <div class="nav roboto-semibold ">
+<body style="font-family: 'Spotify Mix';">
+    <div class="nav roboto-semibold">
         <div class="nav-left">
             <i class="fa-brands fa-spotify" id="spotify-logo" style="color: #ffffff;"></i>
             <i class="fa-solid fa-house" id="house" style="color: #ffffff;"></i>
-            <input type="text" placeholder="What do you want to play?" class="search-box roboto-semibold normal-text">
+            <input type="text" placeholder="What do you want to play?" class="search-box roboto-semibold normal-text"><i class="fa-solid fa-magnifying-glass search-glass"></i>
         </div>
 
         <div class="nav-right">
@@ -26,8 +28,8 @@
                 <li>Support</li>
                 <li>Download</li>
                 <li class="seperator">|</li>
-                <li><i class="fa-regular fa-circle-down" style="margin-right: 0.5rem;"></i>Insatll App</li>
-                <li>Sign up</li>
+                <li id="little-font"><i class="fa-regular fa-circle-down" style="margin-right: 0.5rem;"></i>Insatll App</li>
+                <li id="little-font">Sign up</li>
                 <button class="big-capsule button-text">Log in</button>
             </ul>
 
@@ -40,8 +42,9 @@
         <div class="side-bar">
             <div class="side-bar-content">
                 <div class="side-bar-content-header">
-                    <div class="side-bar-content-header-left">
-                        <i class="fa-solid fa-play"></i><span> &nbsp;Your Music</span> 
+                    <div class="side-bar-content-header-left transit">
+                        <img src="./assets/library-removebg-preview.png" style="height: 30px; width:30px;">
+                        <span> &nbsp;Your Library</span>
                     </div>
                     <div class="side-bar-content-header-right">
                         <i class="fa-solid fa-plus"></i>
@@ -50,14 +53,14 @@
 
                 <div class="sidebar-box">
                     <h3 class="heading-text">Create your first playlist</h3>
-                    <p>It's easy, we'll help you</p>
-                    <button class="sidebar-button">Create playlist</button>
+                    <p class="card-font">It's easy, we'll help you</p>
+                    <button class="sidebar-button heading-text">Create playlist</button>
                 </div>
 
                 <div class="sidebar-box">
                     <h3 class="heading-text">Let's find some podcasts to follow</h3>
-                    <p>We'll keep you updated on new episodes</p>
-                    <button class="sidebar-button">Browse podcasts</button>
+                    <p class="card-font">We'll keep you updated on new episodes</p>
+                    <button class="sidebar-button heading-text">Browse podcasts</button>
                 </div>
 
                 <div class="side-bar-nav">
@@ -86,140 +89,140 @@
                 <div class="main-content-row">
 
                     <div class="main-content-row-card">
-                        <img src="artist1.jpeg">
+                        <img src="./assets/artist1.jpeg">
                         <div class="artist-name">Pritam</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist2.jpeg">
+                        <img src="./assets/artist2.jpeg">
                         <div class="artist-name">Arijit Singh</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist3.jpeg">
+                        <img src="./assets/artist3.jpeg">
                         <div class="artist-name">Sachin-Jigar</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist4.jpeg">
+                        <img src="./assets/artist4.jpeg">
                         <div class="artist-name">A.R. Rahman</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist5.jpeg">
+                        <img src="./assets/artist5.jpeg">
                         <div class="artist-name">Vishal-Shekhar</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist6.jpeg">
+                        <img src="./assets/artist6.jpeg">
                         <div class="artist-name">Atif Aslam</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist7.jpeg">
+                        <img src="./assets/artist7.jpeg">
                         <div class="artist-name">Anirudh Ravichander</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist8.jpeg">
+                        <img src="./assets/artist8.jpeg">
                         <div class="artist-name">Vishal Mishra</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist9.jpeg">
+                        <img src="./assets/artist9.jpeg">
                         <div class="artist-name">Yo Yo Honey Singh</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist10.jpeg">
+                        <img src="./assets/artist10.jpeg">
                         <div class="artist-name">Jasleen Royal</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist11.jpeg">
+                        <img src="./assets/artist11.jpeg">
                         <div class="artist-name">Udit Narayan</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist12.jpeg">
+                        <img src="./assets/artist12.jpeg">
                         <div class="artist-name">Diljit Dosanjh</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist13.jpeg">
+                        <img src="./assets/artist13.jpeg">
                         <div class="artist-name">Shreya Ghoshal</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist14.jpeg">
+                        <img src="./assets/artist14.jpeg">
                         <div class="artist-name">Shanka-Ehsaan-Loy</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist15.jpeg">
+                        <img src="./assets/artist15.jpeg">
                         <div class="artist-name">Badshah</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist16.jpeg">
+                        <img src="./assets/artist16.jpeg">
                         <div class="artist-name">Karan Aujla</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist17.jpeg">
+                        <img src="./assets/artist17.jpeg">
                         <div class="artist-name">Sachet Tandon</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist18.jpeg">
+                        <img src="./assets/artist18.jpeg">
                         <div class="artist-name">Amit Trivedi</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist19.jpeg">
+                        <img src="./assets/artist19.jpeg">
                         <div class="artist-name">Sonu Nigam</div>
                         <div class="role rotobo-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
 
 
                     <div class="main-content-row-card">
-                        <img src="artist20.jpeg">
+                        <img src="./assets/artist20.jpeg">
                         <div class="artist-name">Tanishq Bagchi</div>
                         <div class="role roboto-paragraph mini-text" style="opacity: 0.6;">Artist</div>
                     </div>
@@ -395,8 +398,8 @@
         <div class="footer">
             <div class="footer-content">
                 <div class="footer-content-right">
-                    <p>Preview of Spotify</p>
-                    <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+                    <b><p>Preview of Spotify</p></b>
+                    <p class="little-font">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
                 </div>
                 <div class="footer-content-left">
                   <button class="big-capsule-signup">Sign up free</button>   
