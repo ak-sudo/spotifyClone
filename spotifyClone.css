@@ -434,7 +434,7 @@ li:hover{
     opacity: 1;
 }
 
-@media (max-width: 1250px) {
+@media (min-width: 1601px) {
     body{
         display: flex;
         flex-direction: column; 
@@ -462,6 +462,7 @@ li:hover{
     .foot-div{
         margin-bottom: 2rem;
         padding: 8px;
+        align-items: center;
     }
     .foot-div i{
         margin: 4px;
@@ -469,13 +470,6 @@ li:hover{
     #spotify-logo{
         height: 100%;
         width: auto;
-    }
-    .search-box{
-        padding:3px;
-        height: 40px;
-        width: auto;
-        display: flex;
-        align-items: right;
     }
     .main-content-row-card img{
         border-radius: 0;
@@ -485,15 +479,120 @@ li:hover{
         display: none;
     }
 
+    .main-content-heading{
+        margin-top: 5px;
+    }
+
     .main-content-heading b div{
         font-size: 20px;
     }
     .main-content-content{
         margin-left: 14px;
     }
+
+    .footer{
+        display: none;
+    }
+    .main-content{
+        margin-top: 0;
+        height: 100%;
+    }
+    .main-content-row{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .hide-over-mobile{
+        display: none;
+    }
+    .clone{
+        position: absolute;
+    }
+    .nav{
+        height: 60px;
+    }
+
+
+    .open-app-btn{
+        height: 1.9rem;
+        font-style: normal;
+    } 
+    #nav-desktop{
+        display: none;
+    }
+    #nav-mobile{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-right{
+        display: flex;
+    }
+    .nav-right ul i{
+        margin: 14px;
+    }
+    #only-mob{
+        display: inline-block;
+    }
+    
+}
+
+
+@media (max-width:1273px) {
+    body{
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap;
+    }
+    .nav-right{
+        display: none;
+    }
+
+    .footer{
+        width: 100%;
+        height: auto;
+    }
+    .side-bar{
+        height: auto;
+        width: auto;
+        display: none;
+    }
+
+    .main-footer{
+        justify-content: space-evenly;
+        flex-direction: column;
+
+    }
+    .foot-div{
+        margin-bottom: 2rem;
+        padding: 8px;
+        align-items: center;
+    }
+    .foot-div i{
+        margin: 4px;
+    }
+    #spotify-logo{
+        height: 100%;
+        width: auto;
+    }
+    .main-content-row-card img{
+        border-radius: 0;
+    }
+
+    .u-effect{
+        display: none;
+    }
+
     .main-content-heading{
         margin-top: 5px;
     }
+
+    .main-content-heading b div{
+        font-size: 20px;
+    }
+    .main-content-content{
+        margin-left: 14px;
+    }
+
     .footer{
         display: none;
     }
